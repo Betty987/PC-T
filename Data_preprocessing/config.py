@@ -8,11 +8,11 @@ class Config:
         
     DATASET_NAME = "ptb"  # "ptb" for penntreebank "opwb" for OpenWebText
     
-    # Data
+    
     BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
     DATA_DIR = os.path.join(BASE_DIR, "Data") 
     TOKENIZER_DIR = os.path.join(BASE_DIR, "tokenizer", "outputs")  
    
-    # Training
+    
     BATCH_SIZE = 2
 
