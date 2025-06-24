@@ -41,7 +41,6 @@ def load_tokenizer():
     Config.VOCAB_SIZE =tokenizer.vocab_size + len(special_tokens)
     Config.PAD_ID = tokenizer.pad_token_id
     Config.EOS_ID = tokenizer.eos_token_id
-    #print(f"Updated VOCAB_SIZE: {Config.VOCAB_SIZE}") 
     return tokenizer
 
 def load_model(model_path, config):
