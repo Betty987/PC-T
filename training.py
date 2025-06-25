@@ -64,7 +64,7 @@ def main():
     config = GPTConfig(
         vocab_size = vocab_size,
         block_size= 400, 
-        n_embed=592,
+        n_embed=64,
         dropout=0.2096,
         local_learning_rate= 1.11e-03,
         T= 16,
@@ -75,7 +75,7 @@ def main():
         update_bias=True,
         use_lateral = True,
         energy_fn_name="mse",
-        eos_token_id = tokenizer.token_to_id("[EOS]")
+        eos_token_id = tokenizer.eos_token_id
     )
 
     model = PCTransformer(config)
